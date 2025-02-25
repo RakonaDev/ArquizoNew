@@ -5,7 +5,13 @@ export default {
     extend: {
       colors: {
         rojo: '#E53538',
-        azul: '#092A4D'
+        azul: '#092A4D',
+        azul_oscuro: {
+          900: '#192C4A',
+          800: '#214987',
+          700: '#5377B0' 
+        },
+
       },
       fontFamily: {
         Montserrat: ['"Montserrat"', 'sans-serif'],
