@@ -4,4 +4,5 @@ export interface ServicesInterface {
   description: string
   slogan: string
   image: string
+  fullWidth?: boolean
 }

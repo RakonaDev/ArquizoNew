@@ -3,9 +3,9 @@ import { ServicesInterface } from "../../interfaces/ServicesInterface";
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-export default function ServiceCard({ servicio }: { servicio: ServicesInterface}) {
+export default function ServiceCard({ servicio, isHome }: { servicio: ServicesInterface, isHome: boolean}) {
   return (
-    <div className="max-w-[352px] w-full h-[441px] relative flex items-end group overflow-hidden">
+    <div className={`${servicio.fullWidth ? 'col-span-full' : ''} ${isHome ? 'max-w-[352px]' : ''} w-full h-[441px] relative flex items-end group overflow-hidden`}>
       <div className="absolute px-10 z-20 top-0 left-0 w-full h-full bg-azul/90 translate-x-[100%] group-hover:translate-x-0 transition-all duration-500 flex flex-col justify-evenly items-end">
         <h1 className="font-Ibrand text-end text-white text-xl tracking-widest">{ servicio.name }</h1>
         <Link to={`/servicios/${servicio.id}`} className="text-white text-base flex gap-2 items-center bg-rojo px-4 py-1 rounded-md">

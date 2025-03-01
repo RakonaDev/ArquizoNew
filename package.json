@@ -12,6 +12,7 @@
   "dependencies": {
     "@designbycode/tailwindcss-text-shadow": "^2.2.1",
     "@unpic/react": "^1.0.0",
+    "formik": "^2.4.6",
     "motion": "^12.4.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

@@ -15,10 +15,14 @@ import Hacemos2 from '../assets/hacemos/hacemos2.svg'
 import Hacemos3 from '../assets/hacemos/hacemos3.svg'
 import Hacemos4 from '../assets/hacemos/hacemos4.svg'
 import { Info } from "../components/features/Info";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
-    <div>
+    <div className="pb-10">
       <header className="w-full h-dvh relative">
         <SwiperDinamic data={dataSwiperHome} />
         <Container>
@@ -40,7 +44,7 @@ export default function Home() {
             {
               dataServices.filter((dataService: ServicesInterface) => dataService.id <= 3).map((dataService: ServicesInterface, index: number) => {
                 return (
-                  <ServiceCard key={index} servicio={dataService} />
+                  <ServiceCard key={index} servicio={dataService} isHome={true} />
                 )
               })
             }

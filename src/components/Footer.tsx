@@ -8,7 +8,7 @@ import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <div className="w-full h-auto bg-[#303030] py-10 mt-10">
+    <div className="w-full h-auto bg-[#303030] py-10">
       <Container>
         <div className="w-full flex ">
           <div className="w-1/3 space-y-6">

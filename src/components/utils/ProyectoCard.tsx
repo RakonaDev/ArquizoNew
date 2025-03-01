@@ -1,11 +1,12 @@
 import { Image } from "@unpic/react";
 import { ProyectInterface } from "../../interfaces/ProyectInterface";
+import { Link } from "react-router-dom";
 
 export default function ProyectoCard({ proyect } : { proyect: ProyectInterface }) {
   return (
-    <div className="w-full max-w-[425px] h-auto">
+    <Link to={`/proyectos/${proyect.id}`} className="w-full max-w-[340px] h-auto">
       <Image
-        src={proyect.images[0]}
+        src={proyect.images[proyect.imageSelected]}
         width={425}
         height={302}
         layout="constrained"
@@ -13,6 +14,6 @@ export default function ProyectoCard({ proyect } : { proyect: ProyectInterface }
       />
       <p className="font-K2D text-xs mt-2">{proyect.categories}</p>
       <p className="font-K2D text-2xl font-bold">{proyect.name}</p>
-    </div>
+    </Link>
   )
 }

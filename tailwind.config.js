@@ -9,9 +9,14 @@ export default {
         azul_oscuro: {
           900: '#192C4A',
           800: '#214987',
-          700: '#5377B0' 
+          700: '#5377B0', 
         },
-
+        gris: {
+          700: '#353535',
+          600: '#616161',
+          500: '#595959',
+          200: '#D9D9D9'
+        }
       },
       fontFamily: {
         Montserrat: ['"Montserrat"', 'sans-serif'],

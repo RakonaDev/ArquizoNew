@@ -7,6 +7,7 @@ import Nosotros from "../pages/Nosotros";
 import Proyectos from "../pages/Proyectos";
 import Contacto from "../pages/Contacto";
 import ServicioPorID from "../pages/ServicioPorID";
+import ProyectoPorID from "../pages/ProyectoPorID";
 
 
 export default function Routing() {
@@ -20,6 +21,7 @@ export default function Routing() {
           <Route path="servicios/:id" element={ <ServicioPorID /> } />
           <Route path="nosotros" element={ <Nosotros /> } />
           <Route path="proyectos" element={ <Proyectos /> } />
+          <Route path="proyectos/:id" element={ <ProyectoPorID /> } />
           <Route path="contacto" element={ <Contacto /> } />
         </Route>
       </Routes>

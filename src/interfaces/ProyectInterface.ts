@@ -5,4 +5,5 @@ export interface ProyectInterface {
   description: string
   slogan: string
   images: string[]
+  imageSelected: number
 }
